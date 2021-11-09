@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
+import PasosArmaTuHuerta from "./components/PasosArmaTuHuerta";
+import MantenimientoArmaTuHuerta from "./components/MantenimientoArmaTuHuerta";
+import HeaderArmaTuHuerta from "./components/HeaderArmaTuHuerta";
+import FooterArmaTuHuerta from "./components/FooterArmaTuHuerta";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    <HeaderArmaTuHuerta/>
+    <PasosArmaTuHuerta />	
+    <MantenimientoArmaTuHuerta />
+    <FooterArmaTuHuerta/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
