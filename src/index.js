@@ -12,10 +12,10 @@ import InicioSitio from "./components/InicioSitio";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<MenuSuperior />		
+		<MenuSuperior />
     <InicioSitio />
 		<PiePagina />
-    {/* <CounterApp value="{10}" subtitle = "el subtítulo " /> */}
+    {/* <CounterApp value={10} subtitle = "el subtítulo " /> */}
 	</React.StrictMode>,
 	document.getElementById("root")
 );

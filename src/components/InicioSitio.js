@@ -6,7 +6,7 @@ const InicioSitio = props => {
     <>
       <section id="section1" data-speed="8" data-type="background">
 				<div className="container">
-					<h1>Un título va aquí !!</h1>
+					<h1>Vivir saludable es delicioso</h1>
 				</div>
 			</section>
 
