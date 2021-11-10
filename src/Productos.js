@@ -9,6 +9,8 @@ import img_semillas from './img/semillas.jpg';
 import img_tierra from './img/tierra.jpg';
 
 import ListadoProd from './components/ListadoProductos.js';
+import MenuSuperior from './components/MenuSuperior.js';
+import PiePagina from './components/PiePagina';
 
 const productos=[
   {nombre: "manzanas", precio:"1000", imagen:img_manzana, cat:""},
@@ -19,15 +21,20 @@ const productos=[
 ]
 
 
-function App() {
+function MostrarProductos() {
   return (
+    <div>
+		<MenuSuperior />		
+		
     <div className="container">
       <div className="row">
         <h1>Productos</h1>
       </div>
       <ListadoProd prods={productos} />
     </div>
+    <PiePagina />
+    </div>
   );
 }
 
-export default App;
+export default MostrarProductos;

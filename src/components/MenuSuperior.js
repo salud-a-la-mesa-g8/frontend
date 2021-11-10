@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-regular-svg-icons"
+import { faEye } from "@fortawesome/free-regular-svg-icons";
 const MenuSuperior = () => {
   return (
     <>
