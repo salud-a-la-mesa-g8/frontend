@@ -8,12 +8,14 @@ import reportWebVitals from "./reportWebVitals";
 import MenuSuperior from "./components/MenuSuperior";
 import PiePagina from "./components/PiePagina";
 import InicioSitio from "./components/InicioSitio";
+import NoticiasSaludables from "./components/NoticiasSaludables"
 // import CounterApp from "./components/CounterApp";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<MenuSuperior />		
-    <InicioSitio />
+		{/* <MenuSuperior />		
+    <InicioSitio /> */}
+	<NoticiasSaludables />
 		<PiePagina />
     {/* <CounterApp value="{10}" subtitle = "el subtítulo " /> */}
 	</React.StrictMode>,
