@@ -199,7 +199,7 @@ const NoticiasSaludables = () => {
       </div>
       {/* Finaliza sección de Noticias */}   
 
-      {/* Comienza la sección de Recetas */}
+      {/* Comienza la sección de Tips y Recetas */}
       <section>
      <div className="container">
      <section className="text-center">
@@ -254,32 +254,32 @@ const NoticiasSaludables = () => {
           </div> 
       {/* <!-- Fin de la primera receta -->
       
-      <!-- Inicio de la segunda receta --> */}
+      <!-- Inicio del primer Tip --> */}
       <hr style={{
             color: "green",
             backgroundColor: "green",
             height: 10
         }}/>
-          <div className="row">
-        <div className="col">
-          <div className="noticias-card sombra">
-            <img src="img/sirope de agave ajustado.jpg" className="card-img-top" alt="imagen"/>
-            <div className="card-body">
-              <p className="card-text">
-                <h5>Sirope de ágave</h5>
-                El sirope de agave también conocido como néctar de agave o miel de agave es el jugo vegetal dulce que se
-                extrae de las hojas o pencas del agave, planta de aspecto parecido a una yuca o cactus pero que en
-                realidad es una suculenta similar al aloe vera. Originaria de América tropical, subtropical y el Caribe,
-                existen más de cien especies de plantas, pero para la producción del sirope se emplean principalmente el
-                agave azul y el agave maguey.
-              </p>
+        <div className="row">
+          <div className="col">
+            <div className="noticias-card sombra">
+              <img src="img/sirope de agave ajustado.jpg" className="card-img-top" alt="imagen"/>
+              <div className="card-body">
+                <p className="card-text">
+                  <h5>Sirope de ágave</h5>
+                  El sirope de agave también conocido como néctar de agave o miel de agave es el jugo vegetal dulce que se
+                  extrae de las hojas o pencas del agave, planta de aspecto parecido a una yuca o cactus pero que en
+                  realidad es una suculenta similar al aloe vera. Originaria de América tropical, subtropical y el Caribe,
+                  existen más de cien especies de plantas, pero para la producción del sirope se emplean principalmente el
+                  agave azul y el agave maguey.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
         
-        <div className="col">
-          <div className="noticias-card sombra">
-            <div className="card-body">
+          <div className="col">
+            <div className="noticias-card sombra">
+              <div className="card-body">
 
               <h5 className="card-title">Sirope de cereales</h5>
               
@@ -299,15 +299,50 @@ const NoticiasSaludables = () => {
                 endulzantes naturales como la miel, fructosa o siropes de frutas. Su aspecto y textura es similar al de
                 la miel y puedes elegir sirope de arroz, cebada, trigo o maíz, según tus preferencias.
               </p>
-            </div> 
+              </div> 
+            </div>
           </div>
         </div>
+      {/* Fin del primer tip */}
+        {/* Inicio del segundo Tip */}
+      <hr style={{
+          color: "green",
+          backgroundColor: "green",
+          height: 10
+      }}/>
+      <div className="row">
+          <div className="col">
+            <div className="noticias-card sombra">
+              <img src="img/tips de cocina saludable.jpg" className="card-img-top" alt="imagen"/>
+              <div className="card-body">
+                <p className="card-text">
+                  <h5>10 maneras de cocinar más saludable</h5>
+                  Cuando se trata de cocinar de manera saludable, nos enfocamos en elegir buenos ingredientes con los nutrientes que tú y tu familia necesitan. Pero la verdad es que la forma en que preparas la comida puede ser tan importante como lo que compras.A continuación te ofrecemos una lista de 10 consejos para cocinar de forma más saludable que ayudarán a resaltar el sabor de tus alimentos.
+                  <ul>
+                      <li>1. Trata tus vegetales correctamente</li>
+                      <li>2. Prueba la comida antes de agregar sal</li>
+                      <li>3. Enjuaga las verduras</li>
+                      <li>4. No enjuagues la carne</li>
+                      <li>5. Deshecha la grasa de la carne molida</li>
+                      <li>6. Freír en el horno, no en sartén</li>
+                      <li>7. Agrega un poco de grasa buena a la ensalada</li>
+                      <li>8. No cocines demasiado el ajo fresco</li>
+                      <li>9. Trata bien tu aceite de oliva</li>
+                      <li>10. Varía el menú</li>
+                    </ul>
+                </p>
+              </div>
+            </div>
           </div>
-      {/* Fin de la segunda receta */}
+
+
+          </div>
+
+
 
       </div>
     </section>
-    {/* Fin de la sección de recetas */}
+    {/* Fin de la sección de Tips y recetas */}
       
       </>
     );
