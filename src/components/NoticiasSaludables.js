@@ -304,7 +304,8 @@ const NoticiasSaludables = () => {
           </div>
         </div>
       {/* Fin del primer tip */}
-        {/* Inicio del segundo Tip */}
+
+      {/* Inicio del segundo Tip */}
       <hr style={{
           color: "green",
           backgroundColor: "green",
@@ -313,7 +314,7 @@ const NoticiasSaludables = () => {
       <div className="row">
           <div className="col">
             <div className="noticias-card sombra">
-              <img src="img/tips de cocina saludable.jpg" className="card-img-top" alt="imagen"/>
+              <img src="img/tips de cocina saludable ajustado.jpg" className="card-img-top" alt="imagen"/>
               <div className="card-body">
                 <p className="card-text">
                   <h5>10 maneras de cocinar más saludable</h5>
@@ -334,11 +335,8 @@ const NoticiasSaludables = () => {
               </div>
             </div>
           </div>
-
-
           </div>
-
-
+        {/* Fin segundo Tip */}
 
       </div>
     </section>
