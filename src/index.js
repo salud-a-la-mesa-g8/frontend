@@ -13,8 +13,8 @@ import NoticiasSaludables from "./components/NoticiasSaludables"
 
 ReactDOM.render(
 	<React.StrictMode>
-		{/* <MenuSuperior />		
-    <InicioSitio /> */}
+		<MenuSuperior />		
+    	{/* <InicioSitio /> */}
 	<NoticiasSaludables />
 		<PiePagina />
     {/* <CounterApp value="{10}" subtitle = "el subtítulo " /> */}

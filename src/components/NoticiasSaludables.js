@@ -6,12 +6,17 @@ const NoticiasSaludables = () => {
     return (
 
       <>
+      {/* Inicia sección de Noticias */}
+      <div className="container border bg-secondary text-white pt-5 pb-5 my-5">
+      <section className="text-center pb-5">
+      <h1>NOTICIAS SALUDABLES</h1>
+      </section>
       <section >
-        <div className="clearfix noticias-articulo">
+        <div className="noticias-articulo">
 
-        <img src="https://placeimg.com/200/200/nature" className="col-md-3 float-md-end mb-3 ms-md-3" alt="..." />
+        <img src="img/noticia-1.png" className="col-md-3 float-md-end mb-3 ms-md-3" alt="..." />
 
-        <h3 className="noticias-titulo">Cuida el organismo y tu peso</h3>
+        <h3 className="noticias-titulo text-white">Cuida el organismo y tu peso</h3>
         <p>
             La clave para alcanzar y mantener un peso saludable está en hacer ejercicio regularmente y tener unos buenos
             hábitos alimentarios. Algunas personas creen que hacer ejercicio y seguir unos buenos hábitos alimentarios
@@ -63,13 +68,17 @@ const NoticiasSaludables = () => {
         
         </div>
       </section>   
-
+      <hr style={{
+            color: "black",
+            backgroundColor: "black",
+            height: 10
+        }}/>
       <section>
-          <div className="clearfix noticias-articulo">
+          <div className="noticias-articulo">
 
-          <img src="https://placeimg.com/200/200/tech" className="col-md-3 float-md-end mb-3 ms-md-3" alt="..." />
+          <img src="img/noticia-2.png" className="col-md-3 float-md-end mb-3 ms-md-3" alt="..." />
 
-          <h3 className="noticias-titulo">Alimentación y actividad física</h3>
+          <h3 className="noticias-titulo text-white">Alimentación y actividad física</h3>
 
           <p>
             Los dos principales factores que intervienen en el estado de salud de la persona son las características
@@ -134,17 +143,73 @@ const NoticiasSaludables = () => {
         </div>
             
       </section>   
+      <hr style={{
+            color: "black",
+            backgroundColor: "black",
+            height: 10
+        }}/>
+        <section>
+        <div className="noticias-articulo">
+
+          <img src="img/noticia-3.jpg" className="col-md-3 float-md-end mb-3 ms-md-3" alt="..." />
+
+          <h3 className="noticias-titulo text-white">Consejos para una alimentación saludable en casa</h3>
+
+          <p>
+          Tras el confinamiento producto a la emergencia sanitaria por la COVID-19, comienza a pasar factura tanto tiempo en casa. El exceso de horas frente al ordenador o la televisión suele acompañarse del consumo de snacks no saludables, altos en azúcares y grasas saturadas. Al mismo tiempo, ha aumentado el consumo de alimentos que -aunque no son dañinos por sí solos- aportan más calorías de las necesarias y afectan el metabolismo si se consumen en exceso.
+          </p>
+          <p>
+          Realizar pequeños cambios en los menús diarios puede reducir la cantidad de calorías consumidas y ayuda a desarrollar hábitos alimenticios más saludables a largo plazo. A continuación te ofrecemos algunas recomendaciones. A continuación de ofrecemos algunas recomendaciones.
+          </p>
+          <h4>Sustituir algunos ingredientes</h4>
+          <p>
+          Hay que revisar los ingredientes de las comidas que se consumen y tratar de sustituir algunos para reducir la cantidad de grasas y calorías o aumentar su valor nutricional. El pavo puede sustituir a la carne picada y si se quiere aumentar el consumo de fibra, podría sustituirse el arroz blanco por su versión integral. En caso de duda, siempre es conveniente revisar las etiquetas y comparar los valores nutricionales de productos similares, teniendo en cuenta aspectos como las calorías, las grasas, las proteínas y los azúcares, para tomar las decisiones apropiadas.
+          </p>
+          <h4>Vigilar las proporciones de los ingredientes</h4>
+          <p>
+          Se puede regular la cantidad de aceite que se usa, y en ocasiones saltear en vez de freír los alimentos. También se puede disminuir la cantidad de sal o azúcar y duplicar la ración de frutas y vegetales.
+          </p>
+          <h4>Freír menos</h4>
+          <p>
+          Emplear ingredientes bajos en calorías sirve de poco si éstos se acaban friendo. Cocinar a la parrilla o al vapor con bajas cantidades de sal ayuda a mantener los alimentos saludables sin sacrificar el sabor.
+          </p>
+          <h4>Aumentar el consumo de verduras y frutas</h4>
+          <p>
+          Los vegetales son un complemento ideal de las sopas, el chile, el pastel de carne, los guisos, la ensalada de pollo o atún y la salsa para pastas. Contribuyen a reducir las calorías en las comidas y a aumentar su valor nutricional general, sobre todo si se usan las verduras de hoja verde, como las espinacas, acelgas, coles, rúcula, entre otras. Las frutas, por su parte, son un complemento ideal para las ensaladas. Se pueden usar rodajas de naranja, mandarina, manzana o kiwi, por ejemplo. Las frutas y verduras de temporada estarán más frescas y costarán menos.
+          </p>
+          <h4>Usar condimentos más saludables</h4>
+          <p>
+          La creatividad es la clave al aderezar las verduras al vapor. Se puede echar mano del limón, el vinagre, las hierbas aromáticas, el ajo, la cebolla y las especias en lugar de depender exclusivamente de la mantequilla, las salsas o la sal. Probar con diferentes mostazas y tipos de vinagre para aliñar ensaladas y verduras o incorporar grasas “buenas” (saludables para el corazón) usando aceite de oliva o aceite de linaza también es recomendable.
+          </p>
+          <h4>Cocinar una vez, comer varias veces</h4>
+          <p>
+          Es conveniente duplicar las raciones de los alimentos que se pueden congelar, como las sopas y los guisos. De esta forma, podrán consumirse en una segunda ocasión. Es una forma práctica de estimular el consumo de comida saludable, el control de las porciones y la planificación semanal de las comidas.
+          </p>
+          <h4>Incorporar más pescado a la dieta</h4>
+          <p>
+          El atún en lata y el salmón son fuentes destacadas de omega 3, y además son saludables y asequibles. Añadir atún de lata a la salsa para la pasta en lugar de carne picada, o usar el salmón como complemento de las ensaladas para crear un plato principal rápido, saludable y ligero aumentarán el consumo habitual de pescado.
+          </p>
+          <h4>Elegir meriendas saludables</h4>
+          <p>
+          Una merienda nutritiva y equilibrada puede mantener la energía entre comidas y saciar el hambre. Sin embargo, las situaciones estresantes o inciertas como la que se está viviendo con el coronavirus pueden llevar a consumir de forma compulsiva alimentos no saludables, altos en grasa, sal o azúcar. El exceso de dulce aumenta la cantidad de calorías, lo cual es contraproducente para la salud y si se está tratando de mantener un peso equilibrado. Si se está buscando satisfacer los antojos por una merienda dulce, son recomendables las barras de proteínas, las frutas naturales o cocinadas o los batidos de proteínas con sabor a chocolate o frutas.
+          </p>
+          
+        </div>
+        </section>
+      </div>
+      {/* Finaliza sección de Noticias */}   
 
       {/* Comienza la sección de Recetas */}
       <section>
-
      <div className="container">
-          
-          {/* <!-- Inicio de la primera receta --> */}
+     <section className="text-center">
+      <h1>TIPS Y RECETAS</h1>
+      </section>
+      {/* Inicio de la primera receta */}         
           <div className="row">
             <div className="col">
               <div className="noticias-card sombra" >
-                <img src="../img/noticia-1.png" className="card-img-top" alt="imagen"/>
+                <img src="img/receta pasta y esparragos ajustado.jpg" className="card-img-top" alt="imagen"/>
                 <div className="card-body">
                   <p className="card-text">
                     <h5>Ingredientes para 4 porciones</h5>
@@ -186,16 +251,19 @@ const NoticiasSaludables = () => {
                 </div>
               </div>
             </div>
-        </div>
-      </div>
-    </section>
+          </div> 
       {/* <!-- Fin de la primera receta -->
+      
       <!-- Inicio de la segunda receta --> */}
-    <section>
-    <div className="row">
+      <hr style={{
+            color: "green",
+            backgroundColor: "green",
+            height: 10
+        }}/>
+          <div className="row">
         <div className="col">
           <div className="noticias-card sombra">
-            <img src="https://placeimg.com/50/50/people" className="card-img-top" alt="imagen"/>
+            <img src="img/sirope de agave ajustado.jpg" className="card-img-top" alt="imagen"/>
             <div className="card-body">
               <p className="card-text">
                 <h5>Sirope de ágave</h5>
@@ -234,11 +302,13 @@ const NoticiasSaludables = () => {
             </div> 
           </div>
         </div>
-      </div>
-      
-      </section>
+          </div>
       {/* Fin de la segunda receta */}
 
+      </div>
+    </section>
+    {/* Fin de la sección de recetas */}
+      
       </>
     );
 }      
