@@ -160,7 +160,7 @@ const ArmaTuHuerta = props => {
                 <div className="card mb-3 max-width:540px;">
                     <div className="row g-0 image">
                         <div className="col-md-4 imageses-pasos">
-                            <img src="imag/paso1.jpg" className="img-fluid rounded-start" alt="..."/>
+                            <img src="img/paso1.jpg" className="img-fluid rounded-start" alt="..."/>
                         </div>
                         <div className="col-md-8">
                              <div className="card-body">
@@ -188,7 +188,7 @@ const ArmaTuHuerta = props => {
                 <div className="card mb-3 max-width:540px;">
                     <div className="row g-0">
                         <div className="col-md-4 imageses-pasos">
-                            <img src="imag/paso2.jpg" className="img-fluid rounded-start" alt="..."/>
+                            <img src="img/paso2.jpg" className="img-fluid rounded-start" alt="..."/>
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
@@ -216,7 +216,7 @@ const ArmaTuHuerta = props => {
                 <div className="card mb-3 max-width:540px;">
                     <div className="row g-0">
                         <div className="col-md-4 imageses-pasos">
-                            <img src="imag/paso3.jpg" className="img-fluid rounded-start" alt="..."/>
+                            <img src="img/paso3.jpg" className="img-fluid rounded-start" alt="..."/>
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
@@ -251,7 +251,7 @@ const ArmaTuHuerta = props => {
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     <div className="col">
                         <div className="card h-100">
-                            <img src="imag/maleza.png" className="card-img-top icono-arma-huerta" alt="..."/>
+                            <img src="img/maleza.png" className="card-img-top icono-arma-huerta" alt="..."/>
                             <div className="card-body text-start">
                                 <h4 className="card-title">Arranque la maleza</h4>
                                 <h5 className="card-title">Haga limpieza</h5>
@@ -264,7 +264,7 @@ const ArmaTuHuerta = props => {
                     </div>
                     <div className="col">
                         <div className="card h-100">
-                            <img src="imag/regar.png" className="card-img-top icono-arma-huerta" alt="..."/>
+                            <img src="img/regar.png" className="card-img-top icono-arma-huerta" alt="..."/>
                             <div className="card-body text-start">
                                 <h4 className="card-title">Riegue con Regularidad</h4>
                                 <h5 className="card-title">El agua: el mejor amigo</h5>
@@ -276,7 +276,7 @@ const ArmaTuHuerta = props => {
                     </div>
                     <div className="col">
                         <div className="card h-100">
-                            <img src="imag/seguir-plantando.png" className="card-img-top icono-arma-huerta" alt="..."/>
+                            <img src="img/seguir-plantando.png" className="card-img-top icono-arma-huerta" alt="..."/>
                             <div className="card-body text-start">
                                 <h4 className="card-title">ontinúe Plantando</h4>
                                 <h5 className="card-title">Una actividad sostenible</h5>
@@ -288,7 +288,7 @@ const ArmaTuHuerta = props => {
                     </div>
                     <div className="col">
                         <div className="card h-100">
-                            <img src="imag/fertilizar.png" className="card-img-top icono-arma-huerta" alt="..."/>
+                            <img src="img/fertilizar.png" className="card-img-top icono-arma-huerta" alt="..."/>
                             <div className="card-body text-start">
                                 <h4 className="card-title">Fertilización de la Huerta</h4>
                                 <h5 className="card-title">Los cuidados básicos</h5>
@@ -300,7 +300,7 @@ const ArmaTuHuerta = props => {
                     </div>
                     <div className="col">
                         <div className="card h-100">
-                            <img src="imag/insecto.png" className="card-img-top icono-arma-huerta" alt="..."/>
+                            <img src="img/insecto.png" className="card-img-top icono-arma-huerta" alt="..."/>
                             <div className="card-body text-start">
                                 <h4 className="card-title">Controle los Insectos</h4>
                                 <h5 className="card-title">Las plagas y sus peligros</h5>
@@ -312,7 +312,7 @@ const ArmaTuHuerta = props => {
                     </div>
                     <div className="col">
                         <div className="card h-100">
-                            <img src="imag/proteger.png" className="card-img-top icono-arma-huerta" alt="..."/>
+                            <img src="img/proteger.png" className="card-img-top icono-arma-huerta" alt="..."/>
                             <div className="card-body text-start">
                                 <h4 className="card-title">Utilice Protectores para Extender la Estación</h4>
                                 <h5 className="card-title">Acerca del climas</h5>
@@ -323,7 +323,7 @@ const ArmaTuHuerta = props => {
                     </div>
                     <div className="col">
                         <div className="card h-100">
-                            <img src="imag/siembra-frecuente.png" className="card-img-top icono-arma-huerta" alt="..."/>
+                            <img src="img/siembra-frecuente.png" className="card-img-top icono-arma-huerta" alt="..."/>
                             <div className="card-body text-start">
                                 <h4
                                 className="card-title">Coseche con Frecuencia</h4>
