@@ -39,3 +39,13 @@ body {
   margin: 0 auto;
   position: relative;
 }
+
+.icono-arma-huerta{
+  max-width: 170px;
+  align-self: center;
+  padding: 30px 0px;
+}
+.imageses-pasos img{
+  height: 100%;
+  object-fit: cover; 
+}
