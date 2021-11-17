@@ -9,6 +9,7 @@ import MenuSuperior from "./components/MenuSuperior";
 import PiePagina from "./components/PiePagina";
 import InicioSitio from "./components/InicioSitio";
 import NoticiasSaludables from "./components/NoticiasSaludables"
+import AsesoriaNutricional from "./components/AsesoriaNutricional";
 // import CounterApp from "./components/CounterApp";
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
 		<MenuSuperior />		
     	<InicioSitio />
 	{/* <NoticiasSaludables /> */}
+		{/* <AsesoriaNutricional/> */}
 		<PiePagina />
     {/* <CounterApp value="{10}" subtitle = "el subtítulo " /> */}
 	</React.StrictMode>,
