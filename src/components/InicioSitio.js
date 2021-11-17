@@ -18,7 +18,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c1-1.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c1-1.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -28,7 +28,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c1-2.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c1-2.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -38,7 +38,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c1-3.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c1-3.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -64,7 +64,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c2-1.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c2-1.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -74,7 +74,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c2-2.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c2-2.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -84,7 +84,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c2-3.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c2-3.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -110,7 +110,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c3-1.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c3-1.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -120,7 +120,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c3-2.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c3-2.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -130,7 +130,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c3-3.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c3-3.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -156,7 +156,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c4-1.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c4-1.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -166,7 +166,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c4-2.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c4-2.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
@@ -176,7 +176,7 @@ const InicioSitio = props => {
             </div>
             <div className="col-md-4 my-1">
               <div className="card">
-                <img src="img/c4-3.png" className="card-img-top" alt="imágen" />
+                <img src={require("../img/c4-3.png").default} className="card-img-top" alt="imágen" />
                 <div className="card-body">
                   <h5 className="card-title">Título de la tarjeta</h5>
                   <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos repudiandae, dolorum omnis cupiditate iure natus consectetur odio doloremque accusantium quia commodi odit iste ipsa excepturi aliquid, voluptas rem quas!</p>
