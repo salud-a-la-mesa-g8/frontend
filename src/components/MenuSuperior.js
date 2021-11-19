@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-regular-svg-icons";
+
+
 const MenuSuperior = () => {
   return (
     <>
@@ -13,7 +15,7 @@ const MenuSuperior = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="!#">Inicio</a>
+                <a className="nav-link active" aria-current="page" href="/">Inicio</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="!#">Noticias</a>
@@ -25,7 +27,7 @@ const MenuSuperior = () => {
                 <a className="nav-link" href="!#" tabIndex="-1" aria-disabled="true">Tips y recetas</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="!#" tabIndex="-1" aria-disabled="true">Orgánicos</a>
+                <a className="nav-link" href="/productos" tabIndex="-1" aria-disabled="true">Orgánicos</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="!#" tabIndex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#ingresar">Ingresar</a>
