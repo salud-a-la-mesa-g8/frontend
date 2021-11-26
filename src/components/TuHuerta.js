@@ -1,8 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye } from "@fortawesome/free-regular-svg-icons";
-
-
+import { Link } from "react-router-dom"; //Eliminar ****+**
 
 export const cardPasos = [
     {id: 1,
@@ -10,18 +7,20 @@ export const cardPasos = [
     titulo: "Paso 1", 
     subtitulo: "Elige el lugar", 
     descripcion: `Empieza por definir el espacio que le asignaras  a la huerta ya que determina el fracaso o el éxito. ten en cuenta lo siguiente`,
-    descripcion2 : 
-    <ul>
+    descripcion2 : <ul>
         <li>
-            Cantidad de sol que recibe el lugar
+            Decide si será horizontal o vertical
         </li>
         <li>
-            Contar con un punto de agua cerca
+            Usa materiales usados: cajones y armarios viejos, botellas plásticas
         </li>
         <li>
-            Protección contra corrientes de aire
+            Si no tienes un espacio continuo puedes usar macetas de diferentes tamaños
         </li>
-    </ul> 
+    </ul>
+    
+        
+        
     },
     {
     id: 2,
@@ -124,150 +123,10 @@ function TuHuerta (){
         tituloPasos : <h2>Primeros Pasos </h2> ,
         tituloMantenimiento : <h2>Mantenimiento y Cuidados</h2>,
     }  
-    
-   
-    
-    
+  
     return (
         <>
-            <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="!#">Comidas saludables</a>
-                    <button className="btn-sm navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="!#">Inicio</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="!#">Noticias</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="!#" tabIndex="-1" aria-disabled="true">Construye tu huerta</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="!#" tabIndex="-1" aria-disabled="true">Tips y recetas</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="!#" tabIndex="-1" aria-disabled="true">Orgánicos</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="!#" tabIndex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#ingresar">Ingresar</a>
-                            </li>
-                            <li className="nav-item dropdown d-none">
-                                <a className="nav-link dropdown-toggle" href="!#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Administrar
-                                </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <a className="dropdown-item" href="!#">Noticias</a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="!#">Construye tu huerta</a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="!#">Tips y recetas</a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="!#">Orgánicos</a>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="!#">Cambiar el password</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form className="d-flex">
-                            <input className="form-control form-control-sm me-2" type="search" placeholder="texto a buscar" aria-label="Search" />
-                            <button className="btn btn-sm btn-outline-light" type="submit">Buscar</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-
-            <div className="modal fade" id="ingresar" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Ingresar o registrarse</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            <ul className="nav nav-tabs">
-                                <li className="nav-item">
-                                    <a className="nav-link active" data-bs-toggle="tab" href="#TabIngreso">Ingresar</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" data-bs-toggle="tab" href="#TabRegistro">Registrarse</a>
-                                </li>
-                            </ul>
-                            <div id="myTabContent" className="tab-content">
-                                {/* pestaña ingresar */}
-                                <div className="tab-pane fade active show" id="TabIngreso">
-                                    <form>
-                                        <div className="my-2">
-                                            <label htmlFor="IngresoCelular" className="form-label">Celular</label>
-                                            <input type="texto" className="form-control" id="IngresoCelular" maxLength="10" />
-                                            <div id="IngresoCelularHelp" className="form-text">Ingresa tu número celular (10 números)
-                                            </div>
-                                        </div>
-                                        <label htmlFor="IngresoPass" className="form-label">Password</label>
-                                        <div className="input-group mb-1">                      
-                                            <input type="password" className="form-control" id="IngresoPass" maxLength="15" />
-                                            <span className="input-group-text" id="basic-addon1">
-                                                <FontAwesomeIcon icon={faEye} />
-                                            </span>                      
-                                        </div>
-                                        <div id="IngresoPassHelp" className="form-text mb-2">Ingresa tu password (máx 15 caractéres)</div>
-                                        <button type="submit" className="btn btn-sm btn-primary">Guardar información</button>
-                                    </form>
-                                </div>
-                                {/* pestaña registro */}
-                                <div className="tab-pane fade" id="TabRegistro">
-                                    <form>
-                                        <div className="my-2">
-                                            <label htmlFor="RegistroNombre" className="form-label">Nombre completo</label>
-                                            <input type="texto" className="form-control" id="RegistroNombre" maxLength="100" />
-                                            <div id="RegistroNombreHelp" className="form-text">Regitra tu nombre completo (máx 100 caractéres)</div>
-                                        </div>
-                                        <div className="my-1">
-                                            <label htmlFor="RegitroCorreo" className="form-label">Correo electrónico</label>
-                                            <input type="email" className="form-control" id="RegitroCorreo" maxLength="100" />
-                                            <div id="RegitroCorreosHelp" className="form-text">Regitra tu correo electrónico (máx 100 caractéres)
-                                            </div>
-                                        </div>
-                                        <div className="my-1">
-                                            <label htmlFor="RegitroCelular" className="form-label">Celular</label>
-                                            <input type="texto" className="form-control" id="RegitroCelular" maxLength="10" />
-                                            <div id="RegitroCelularHelp" className="form-text">Regitra tu número celular (10 números)
-                                            </div>
-                                        </div>
-                                        <label htmlFor="RegitroPass" className="form-label">Password</label>
-                                        <div className="input-group mb-1">                      
-                                            <input type="password" className="form-control" id="RegitroPass" maxLength="15" />
-                                            <span className="input-group-text" id="basic-addon1">
-                                                <FontAwesomeIcon icon={faEye} />
-                                            </span>                      
-                                        </div>
-                                        <div id="RegitroPassHelp" className="form-text mb-2">Registra tu password (máx 15 caractéres)</div>
-                                            <button type="submit" className="btn btn-sm btn-primary">Guardar información</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cerrar</button>              
-                        </div>
-                    </div>
-                </div>
-            </div>
         
-             
 
             <div className="container text-center pt-5">
                 <div className="row">
@@ -299,6 +158,7 @@ function TuHuerta (){
                                     <p className="card-text">
                                         {item.descripcion}
                                         {item.descripcion2}
+                                     
                                     </p>     
                                 </div>
                             </div>
@@ -331,27 +191,20 @@ function TuHuerta (){
                 )}
                 </div>
             </div>
-            <div clasName="container">
-            </div>
+            
+            <li className="nav-item">
         
+				<Link className="nav-link" to="/crudmantenimiento">									
+					Crud Mantenimiento
+				</Link>
+			</li>
+            <li className="nav-item">         
+                <Link className="nav-link" to="/crudpasos">									
+                    Crud Pasos
+                </Link>
+            </li>
 
-            <ul className="nav justify-content-center pt-3 pb-1">
-                <li className="nav-item">
-                    <a className="nav-link" rel="noreferrer" target="_blank" href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet">OMS</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" rel="noreferrer" target="_blank" href="https://blog.famisanar.com.co/tag/alimentaci%C3%B3n-saludable">Famisanar</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" rel="noreferrer" target="_blank" href="https://www.niddk.nih.gov/health-information/informacion-de-la-salud/control-de-peso/ayudar-su-hijo">Depto Salud USA</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" rel="noreferrer" target="_blank" href="https://www.cdc.gov/healthyweight/spanish/healthyeating/eatmoreweightless.html">CCPE</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" rel="noreferrer" target="_blank" href="https://www.flowchem.com.co/rotulacion-de-alimentos-en-colombia">Flow Chemical</a>
-                </li>
-            </ul>
+
         </>
     );  
     
