@@ -39,7 +39,7 @@ body {
   margin: 0 auto;
   position: relative;
 }
-
+/*Tu Huerta */
 .icono-arma-huerta{
   max-width: 170px;
   align-self: center;
@@ -48,4 +48,23 @@ body {
 .imageses-pasos img{
   height: 100%;
   object-fit: cover; 
+}
+/* NOTICIAS - GUSTAVO */
+
+.noticias-card{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sombra{
+  /* box-shadow: 0 0 0.2em rgb(200, 200, 200), 0 0 0.2em rgb(200, 200, 200),0 0 0.2em rgb(200, 200, 200); */
+  box-shadow: 0px 10px 10px rgb(93, 93, 93);
+}
+
+.noticias-articulo{
+  font-size:medium;
+}
+
+.noticias-titulo{
+  color: black;  
 }
