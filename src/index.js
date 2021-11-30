@@ -4,38 +4,16 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-
-// import CounterApp from "./components/CounterApp";
-
-//React-Router
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route,
-  } from "react-router-dom";
-
-  // componenentes
-import MenuSuperior from "./components/MenuSuperior";
+// componenentes
+import App from "./App";
 import PiePagina from "./components/PiePagina";
-//import InicioSitio from "./components/InicioSitio";
-import MostrarProductos from "./Productos";
-
-//Routes
-import MainRoutes from "./routes/MainRoutes";
-
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
-			<MenuSuperior />
-				<Routes>
-					<Route path={MainRoutes.path} element={MainRoutes.element} />
-					<Route path="productos/*" element={<MostrarProductos />} />
-				</Routes>
-				{/* <InicioSitio /> */}
-			<PiePagina />
-		</Router>
-    {/* <CounterApp value="{10}" subtitle = "el subtítulo " /> */}
+    
+    <App />           		
+    <PiePagina />
+
 	</React.StrictMode>,
 	document.getElementById("root")
 );
