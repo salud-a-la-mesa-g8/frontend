@@ -11,13 +11,13 @@ import InicioSitio from "./components/InicioSitio";
 import NoticiasSaludables from "./components/NoticiasSaludables"
 import AsesoriaNutricional from "./components/AsesoriaNutricional";
 // import CounterApp from "./components/CounterApp";
+import NoticiasPrivado from "./components/NoticiasPrivado";
 
 ReactDOM.render(
 	<React.StrictMode>
 		<MenuSuperior />		
-    	<InicioSitio />
-	{/* <NoticiasSaludables /> */}
-		{/* <AsesoriaNutricional/> */}
+    	{/* <InicioSitio /> */}
+		<NoticiasPrivado/>
 		<PiePagina />
     {/* <CounterApp value="{10}" subtitle = "el subtítulo " /> */}
 	</React.StrictMode>,
