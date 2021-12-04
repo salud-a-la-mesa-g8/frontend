@@ -10,16 +10,19 @@ import PiePagina from "./components/PiePagina";
 import InicioSitio from "./components/InicioSitio";
 import NoticiasSaludables from "./components/NoticiasSaludables"
 import AsesoriaNutricional from "./components/AsesoriaNutricional";
-// import CounterApp from "./components/CounterApp";
 import NoticiasPrivado from "./components/NoticiasPrivado";
+import RecetasSaludables from "./components/RecetasSaludables";
+import RecetasPrivado from "./components/RecetasPrivado";
+import RecetasPrivadoCopy from "./components/RecetasPrivadoCopy";
 
 ReactDOM.render(
 	<React.StrictMode>
 		<MenuSuperior />		
     	{/* <InicioSitio /> */}
-		<NoticiasPrivado/>
+		
+		{/* <NoticiasPrivado/> */}
+		<RecetasPrivadoCopy/>
 		<PiePagina />
-    {/* <CounterApp value="{10}" subtitle = "el subtítulo " /> */}
 	</React.StrictMode>,
 	document.getElementById("root")
 );

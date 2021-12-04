@@ -2,15 +2,14 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 require('dotenv').config();
 
-
-function NoticiasPrivado() {
+function RecetasPrivado() {
 
     const [datos, setDatos] = useState([]);
-    const [titulo, setTitulo] = useState("");
-    const [autor, setAutor] = useState("");
-    const [texto_corto, setTexto_corto] = useState("");
-    const [texto_largo, setTexto_largo] = useState("");
     const [imagen, setImagen] = useState();
+    const [titulo_Ingredientes, setTitulo_Ingredientes] = useState("");
+    const [ingredientes, setIngredientes] = useState("");
+    const [titulo_ppal, setTitulo_ppal] = useState("");
+    const [pasos, setPasos] = useState("");
     const [modifiedBy, setModifiedBy] = useState();
     const [validacionModificar, setValidacionModificar] = useState(false);
     const [idModificar, setIdModificar] = useState(0);
@@ -27,44 +26,44 @@ function NoticiasPrivado() {
             headers: { "Authorization" : "Bearer " + token}
         }
 
-        const respuesta = await axios.get(process.env.REACT_APP_URL_API +"noticia/list", head )
+        const respuesta = await axios.get(process.env.REACT_APP_URL_API +"receta/list", head )
 
-        // const respuesta = await axios.get(process.env.REACT_APP_URL_API +"noticia/list")
+        // const respuesta = await axios.get(process.env.REACT_APP_URL_API +"receta/list")
         
         setDatos(respuesta.data)
-        setTitulo("")
-        setAutor("")
-        setTexto_corto("")
-        setTexto_largo("")
         setImagen("")
+        setTitulo_Ingredientes("")
+        setIngredientes("")
+        setTitulo_ppal("")
+        setPasos("")
         setModifiedBy("")
             
     }
 
-    const agregarNoticia = async (e) => {
+    const agregarReceta = async (e) => {
         e.preventDefault()
         let token= sessionStorage.getItem("token")
         let head = {
             headers: { "Authorization" : "Bearer " + token}
         }
         let bodyParam = {
-            titulo,
-            autor,
-            texto_corto,
-            texto_largo,
             imagen,
+            titulo_Ingredientes,
+            ingredientes,
+            titulo_ppal,
+            pasos,
             modifiedBy
         }
         
-        await axios.post(process.env.REACT_APP_URL_API +"noticia/add", bodyParam, head )
+        await axios.post(process.env.REACT_APP_URL_API +"receta/add", bodyParam, head )
        
-        // await axios.post("http://localhost:3000/api/noticia/add",{
-        //                     titulo,
-        //                     autor,
-        //                     texto_corto,
-        //                     texto_largo,
-        //                     imagen,
-        //                     modifiedBy
+        // await axios.post(process.env.REACT_APP_URL_API +"receta/add",{
+        //                         imagen,
+                                // titulo_Ingredientes,
+                                // ingredientes,
+                                // titulo_ppal,
+                                // pasos,
+                                // modifiedBy
         //                 })
         
         cargarDatos()
@@ -75,11 +74,11 @@ function NoticiasPrivado() {
 
         datos.forEach(element => {
             if (element._id === id){
-                setTitulo(element.titulo)
-                setAutor(element.autor)
-                setTexto_corto(element.texto_corto)
-                setTexto_largo(element.texto_largo)
                 setImagen(element.imagen)
+                setTitulo_Ingredientes(element.titulo_Ingredientes)
+                setIngredientes(element.ingredientes)
+                setTitulo_ppal(element.titulo_ppal)
+                setPasos(element.pasos)
                 setModifiedBy(element.modifiedBy)
             }
         });
@@ -89,7 +88,7 @@ function NoticiasPrivado() {
         
     }
 
-    const modificarNoticia = async (e) => {
+    const modificarReceta = async (e) => {
         e.preventDefault()
         let token= sessionStorage.getItem("token")
         let head = {
@@ -97,31 +96,31 @@ function NoticiasPrivado() {
         }
         let bodyParam = {
             _id:idModificar,
-            titulo,
-            autor,
-            texto_corto,
-            texto_largo,
             imagen,
+            titulo_Ingredientes,
+            ingredientes,
+            titulo_ppal,
+            pasos,
             modifiedBy
         }
-         await axios.put(process.env.REACT_APP_URL_API+"noticia/update", bodyParam, head)
+         await axios.put(process.env.REACT_APP_URL_API+"receta/update", bodyParam, head)
 
 
-        // await axios.put("http://localhost:3000/api/noticia/update",{
-        //                     _id:idModificar,
-        //                     titulo,
-        //                     autor,
-        //                     texto_corto,
-        //                     texto_largo,
-        //                     imagen,
-        //                     modifiedBy
+        // await axios.put(process.env.REACT_APP_URL_API+"receta/update",{
+        //                         _id:idModificar,
+                                // imagen,
+                                // titulo_Ingredientes,
+                                // ingredientes,
+                                // titulo_ppal,
+                                // pasos,
+                                // modifiedBy
         //                 })
         cargarDatos()
         setValidacionModificar(false)
 
     }
 
-    const eliminarNoticia = async (id) => {
+    const eliminarReceta = async (id) => {
 
         let token= sessionStorage.getItem("token")
         let head = {
@@ -130,7 +129,7 @@ function NoticiasPrivado() {
         let bodyParam = {
             _id:id
         }
-        await axios.put(process.env.REACT_APP_URL_API+"noticia/estado",bodyParam,head)
+        await axios.put(process.env.REACT_APP_URL_API+"receta/estado",bodyParam,head)
 
         cargarDatos()
 
@@ -139,19 +138,19 @@ function NoticiasPrivado() {
     return (
         <div className="container border  pt-5 pb-5 my-5">
 
-            <h2 className="text-center ">Administración Contenido Noticias Saludables</h2>
+            <h2 className="text-center ">Administración Contenido Recetas Saludables</h2>
             <div className="row">
 
-                <div className="col-8">
+                <div className="col-9">
                     
-                    <table className="table table-light">
+                    <table className="table table-light ">
                         <thead>
                             <tr>
-                                <th>Titulo</th>
-                                <th>Autor</th>
-                                <th>Texto corto</th>
-                                <th>Texto largo</th>
-                                <th>Imgen</th>
+                                <th>Imagen</th>
+                                <th>Titulo Ingredientes</th>
+                                <th>Ingredientes</th>
+                                <th>Titulo Principal</th>
+                                <th>Pasos</th>
                                 <th>Estado</th>
                                 <th>Modificar</th>
                                 <th>Eliminar</th>
@@ -165,19 +164,17 @@ function NoticiasPrivado() {
                                     return (
                                                     
                                         <tr>                                           
-                                            <td>{item.titulo}</td>
-                                            <td>{item.autor}</td>
-                                            <td>{item.texto_corto}</td>
-                                            <td>{item.texto_largo}</td>
-                                            <td>
-                                                <img src="" alt="imagen" />
-                                            </td>
+                                            <td>{item.imagen}</td>
+                                            <td>{item.titulo_Ingredientes}</td>
+                                            <td>{item.ingredientes}</td>
+                                            <td>{item.titulo_ppal}</td>
+                                            <td>{item.pasos}</td>
                                             <td>{item.estado}</td>
                                             <td>
                                                 <button className="btn btn-warning btn-sm" onClick={()=>activarModificacion(item._id)}>Modificar</button>
                                             </td>
                                             <td>
-                                                <button className="btn btn-danger btn-sm" onClick={()=>eliminarNoticia(item._id)}>Eliminar</button>
+                                                <button className="btn btn-danger btn-sm" onClick={()=>eliminarReceta(item._id)}>Eliminar</button>
                                             </td>
                                             
                                         </tr>
@@ -191,37 +188,37 @@ function NoticiasPrivado() {
 
                     </table>
                 </div>
-                <div className="col-4">
+                <div className="col-3">
                     <h4 className="text-center">Formulario de Adición</h4>
                     <form >
                         <div className="mb-3">
-                            <label className="form-label">Titulo</label>
-                            <input type="text" className="form-control" onChange={(e) => setTitulo(e.target.value)} value={titulo} />
-                        </div>
-                        <div className="mb-3">
-                            <label className="form-label">Autor</label>
-                            <input type="text" className="form-control" onChange={(e) => setAutor(e.target.value)} value={autor} />
-                        </div>
-                        <div className="mb-3">
-                            <label className="form-label">Texto Corto</label>
-                            <input type="text" className="form-control" onChange={(e) => setTexto_corto(e.target.value)} value={texto_corto}/>
-                        </div>
-                        <div className="mb-3">
-                            <label className="form-label">Texto Largo</label>
-                            <input type="text" className="form-control" onChange={(e) => setTexto_largo(e.target.value)} value={texto_largo}/>
-                        </div>
-                        <div className="mb-3">
                             <label className="form-label">Imagen</label>
-                            <input type="text" className="form-control" onChange={(e) => setImagen(e.target.value)}  value={imagen}/>
+                            <input type="text" className="form-control" onChange={(e) => setImagen(e.target.value)} value={imagen} />
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label">Titulo Ingredientes</label>
+                            <input type="text" className="form-control" onChange={(e) => setTitulo_Ingredientes(e.target.value)} value={titulo_Ingredientes} />
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label">Ingredientes</label>
+                            <input type="text" className="form-control" onChange={(e) => setIngredientes(e.target.value)} value={ingredientes}/>
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label">Titulo Principal</label>
+                            <input type="text" className="form-control" onChange={(e) => setTitulo_ppal(e.target.value)} value={titulo_ppal}/>
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label">Pasos</label>
+                            <input type="text" className="form-control" onChange={(e) => setPasos(e.target.value)}  value={pasos}/>
                         </div>                    
                         <div className="mb-3">
                             <label className="form-label">Actualizado por</label>
                             <input type="text" className="form-control" onChange={(e) => setModifiedBy(e.target.value)} value={modifiedBy}/>
                         </div>
                         {validacionModificar ?(
-                            <button className="btn btn-warning" onClick={(e) => modificarNoticia(e)}>Modificar</button>
+                            <button className="btn btn-warning" onClick={(e) => modificarReceta(e)}>Modificar</button>
                         ) : (
-                            <button className="btn btn-success" onClick={(e) => agregarNoticia(e)}>Agregar</button>
+                            <button className="btn btn-success" onClick={(e) => agregarReceta(e)}>Agregar</button>
                         )}
                         
                     </form>
@@ -231,4 +228,4 @@ function NoticiasPrivado() {
     )
 }
 
-export default NoticiasPrivado
+export default RecetasPrivado
