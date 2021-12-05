@@ -27,8 +27,6 @@ function RecetasPrivado() {
         }
 
         const respuesta = await axios.get(process.env.REACT_APP_URL_API +"receta/list", head )
-
-        // const respuesta = await axios.get(process.env.REACT_APP_URL_API +"receta/list")
         
         setDatos(respuesta.data)
         setImagen("")
@@ -56,15 +54,6 @@ function RecetasPrivado() {
         }
         
         await axios.post(process.env.REACT_APP_URL_API +"receta/add", bodyParam, head )
-       
-        // await axios.post(process.env.REACT_APP_URL_API +"receta/add",{
-        //                         imagen,
-                                // titulo_Ingredientes,
-                                // ingredientes,
-                                // titulo_ppal,
-                                // pasos,
-                                // modifiedBy
-        //                 })
         
         cargarDatos()
         
@@ -105,16 +94,6 @@ function RecetasPrivado() {
         }
          await axios.put(process.env.REACT_APP_URL_API+"receta/update", bodyParam, head)
 
-
-        // await axios.put(process.env.REACT_APP_URL_API+"receta/update",{
-        //                         _id:idModificar,
-                                // imagen,
-                                // titulo_Ingredientes,
-                                // ingredientes,
-                                // titulo_ppal,
-                                // pasos,
-                                // modifiedBy
-        //                 })
         cargarDatos()
         setValidacionModificar(false)
 
@@ -138,14 +117,14 @@ function RecetasPrivado() {
     return (
         <div className="container border  pt-5 pb-5 my-5">
 
-            <h2 className="text-center ">Administración Contenido Recetas Saludables</h2>
+            <h2 className="text-center ">Administración Recetas Saludables</h2>
             <div className="row">
 
                 <div className="col-9">
                     
-                    <table className="table table-light ">
+                    <table className="table table-light table-striped">
                         <thead>
-                            <tr>
+                            <tr className="table-success">
                                 <th>Imagen</th>
                                 <th>Titulo Ingredientes</th>
                                 <th>Ingredientes</th>
@@ -164,17 +143,17 @@ function RecetasPrivado() {
                                     return (
                                                     
                                         <tr>                                           
-                                            <td>{item.imagen}</td>
-                                            <td>{item.titulo_Ingredientes}</td>
-                                            <td>{item.ingredientes}</td>
-                                            <td>{item.titulo_ppal}</td>
-                                            <td>{item.pasos}</td>
-                                            <td>{item.estado}</td>
+                                            <td className="table-primary" >{item.imagen}</td>
+                                            <td className="table-primary">{item.titulo_Ingredientes}</td>
+                                            <td className="table-primary">{item.ingredientes}</td>
+                                            <td className="table-primary">{item.titulo_ppal}</td>
+                                            <td className="table-primary">{item.pasos}</td>
+                                            <td className="table-primary">{item.estado}</td>
                                             <td>
-                                                <button className="btn btn-warning btn-sm" onClick={()=>activarModificacion(item._id)}>Modificar</button>
+                                                <button className="table-primary btn btn-warning btn-sm" onClick={()=>activarModificacion(item._id)}>Modificar</button>
                                             </td>
                                             <td>
-                                                <button className="btn btn-danger btn-sm" onClick={()=>eliminarReceta(item._id)}>Eliminar</button>
+                                                <button className="table-primary btn btn-danger btn-sm" onClick={()=>eliminarReceta(item._id)}>Eliminar</button>
                                             </td>
                                             
                                         </tr>

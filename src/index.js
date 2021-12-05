@@ -18,10 +18,10 @@ import RecetasPrivadoCopy from "./components/RecetasPrivadoCopy";
 ReactDOM.render(
 	<React.StrictMode>
 		<MenuSuperior />		
-    	{/* <InicioSitio /> */}
+    	<InicioSitio />
 		
-		{/* <NoticiasPrivado/> */}
-		<RecetasPrivadoCopy/>
+		
+		
 		<PiePagina />
 	</React.StrictMode>,
 	document.getElementById("root")
