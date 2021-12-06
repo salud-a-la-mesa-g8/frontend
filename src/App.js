@@ -5,14 +5,15 @@ import Noticias from './components/Noticias'
 import Organicos from './components/Organicos'
 import AsesoriaNutricional from './components/AsesoriaNutricional'
 import TuHuerta from './components/TuHuerta'
-import CrudMantenimiento  from './components/CrudMantenimiento'
+import TuHuertaPrivate  from './components/TuHuertaPrivate'
+
 
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
-import CrudPasos from './components/CrudPasos'
+
 
 function App() {
   return (
@@ -24,9 +25,10 @@ function App() {
         <Route exact path="noticias" element={<Noticias />} />
         <Route exact path="organicos" element={<Organicos />}  />
         <Route exact path="recetas" element={<AsesoriaNutricional />} />
-        <Route exact path="tuhuerta" element={<TuHuerta />} />
-        <Route exact path="crudmantenimiento" element={<CrudMantenimiento />} /> 
-        <Route exact path="crudpasos" element={<CrudPasos />} /> 
+        <Route exact path="tuhuerta" element={<TuHuerta />} /> 
+        <Route exact path="tuhuertaprivate" element={<TuHuertaPrivate/>} />
+        
+
       </Routes>
     </BrowserRouter>
                                        
