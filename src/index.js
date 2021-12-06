@@ -13,14 +13,15 @@ import AsesoriaNutricional from "./components/AsesoriaNutricional";
 import NoticiasPrivado from "./components/NoticiasPrivado";
 import RecetasSaludables from "./components/RecetasSaludables";
 import RecetasPrivado from "./components/RecetasPrivado";
-import RecetasPrivadoCopy from "./components/RecetasPrivadoCopy";
+
 
 ReactDOM.render(
 	<React.StrictMode>
 		<MenuSuperior />		
-    	<InicioSitio />
+    	{/* <InicioSitio /> */}
 		
-		
+		<RecetasPrivado/>
+		{/* <RecetasSaludables/> */}
 		
 		<PiePagina />
 	</React.StrictMode>,
